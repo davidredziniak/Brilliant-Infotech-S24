@@ -2,53 +2,70 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Demo Employee Web Page</title>
 </head>
 
 <body>
     <div>
-        <h3>Employee Form</h3>
+        <h2>Employee Form</h2>
         <!-- Each field ends in a <br> tag to allow readability and proper formatting -->
         <!-- Each label has a 'for' attribute to indicate which element's ID it is bound to -->
-        <form>
-            <!-- Employee ID uses an input element with type 'number' to indicate that input should only be numbers -->
-            <label for="eid">Employee ID:</label>
-            <input type="text" id="eid" pattern="[0-9]" />
-            <br />
-            <!-- SSN uses an input element with type 'password' to indicate that input is hidden, and uses a pattern to only use at most -->
-            <label for="email">Last four of SSN:</label>
-            <input type="password" id="ssn" pattern="[0-9]{4}" required="required" />
-            <br />
-            <!-- Employee Name uses an input element with type 'text' to indicate that input only allows for letters using a specified pattern -->
-            <label for="ename">Employee Name:</label>
-            <input type="text" id="ename" pattern="[A-Za-z]+" />
-            <br />
-            <!-- Employee Email uses an input element with type 'text' to indicate that input only allows for letters using a specified pattern -->
-            <label for="email">Employee Email:</label>
-            <input type="text" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" />
-            <br />
+        <form action="/submit">
+            <!-- Employee ID uses an input element with type 'text' as XHTML doesn't support type="number" -->
+            <p>
+                <label for="eid">Employee ID:</label>
+                <input type="text" id="eid" />
+                <br />
+            </p>
+            <!-- SSN uses an input element with type 'password' to indicate that input is hidden -->
+            <p>
+                <label for="email">Last four of SSN:</label>
+                <input type="password" id="ssn" />
+                <br />
+            </p>
+            <!-- Employee Name uses an input element with type 'text' to indicate that input only allows for text -->
+            <p>
+                <label for="ename">Employee Name:</label>
+                <input type="text" id="ename" />
+                <br />
+            </p>
+            <!-- Employee Email uses an input element with type 'text' to indicate that input only allows for text -->
+            <p>
+                <label for="email">Employee Email:</label>
+                <input type="text" id="email" />
+                <br />
+            </p>
             <!-- Department uses a select element to indicate a drop down menu and allows for pre-defined options for the user to select -->
-            <label for="department">Department:</label>
-            <select id="department" name="department">
-                <!-- The value attribute is defined and will be sent to the server -->
-                <option value="hr">Human Resources</option>
-                <option value="op">Operations</option>
-                <option value="fin">Finance</option>
-                <option value="mark">Marketing</option>
-                <option value="it">Information Technology</option>
-            </select>
-            <br />
+            <p>
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <!-- The value attribute is defined and will be sent to the server -->
+                    <option value="">Please choose</option>
+                    <option value="hr">Human Resources</option>
+                    <option value="op">Operations</option>
+                    <option value="fin">Finance</option>
+                    <option value="mark">Marketing</option>
+                    <option value="it">Information Technology</option>
+                </select>
+                <br />
+            </p>
             <!-- Gender uses a select element to indicate a drop down menu and allows for pre-defined options for the user to select -->
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender">
-                <!-- The value attribute is defined and will be sent to the server -->
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-            <br />
+            <p>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <!-- The value attribute is defined and will be sent to the server -->
+                    <option value="">Please choose</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br />
+            </p>
             <!-- Submit button to allow the client to be able to send all user input to the server for processing -->
-            <input type="submit" value="Submit" />
+            <p>
+                <input type="submit" value="Submit" />
+            </p>
         </form>
     </div>
 </body>

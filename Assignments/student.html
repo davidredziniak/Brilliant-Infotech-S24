@@ -8,49 +8,57 @@
 
 <body>
     <div>
-        <h3>Student Form</h3>
+        <h2>Student Form</h2>
         <!-- Each field ends in a <br> tag to allow readability and proper formatting -->
         <!-- Each label has a 'for' attribute to indicate which element's ID it is bound to -->
         <form>
             <!-- Student ID uses an input element with type 'number' to indicate that input should only be numbers -->
-            <label for="sid">Student ID:</label>
-            <input type="number" id="sid" required>
-            <br>
+            <p>
+                <label for="sid">Student ID:</label>
+                <input type="number" id="sid" required>
+                <br>
+            </p>
             <!-- Student Name uses an input element with type 'text' to indicate that input only allows for letters using a specified pattern -->
-            <label for="sname">Student Name:</label>
-            <input type="text" id="sname" pattern="[A-Za-z]+" required>
-            <br>
+            <p>
+                <label for="sname">Student Name:</label>
+                <input type="text" id="sname" pattern="[A-Za-z]+" required>
+                <br>
+            </p>
             <!-- Department uses an input element with type 'text' to indicate that input only allows for text -->
-            <label for="department">Department:</label>
-            <input type="text" id="department" required>
-            <br>
+            <p>
+                <label for="department">Department:</label>
+                <input type="text" id="department" required>
+                <br>
+            </p>
             <!-- Subject uses a select element to indicate a drop down menu and allows for pre-defined options for the user to select -->
-            <label for="subject">Subject:</label>
-            <select id="subject" name="subject">
-                <!-- The value attribute is defined and will be sent to the server -->
-                <option value="it">Information Technology</option>
-                <option value="cs">Computer Science</option>
-                <option value="math">Mathematics</option>
-                <option value="psych">Psychology</option>
-            </select>
-            <br>
+            <p>
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <!-- The value attribute is defined and will be sent to the server -->
+                    <option value="">Please choose</option>
+                    <option value="it">Information Technology</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="math">Mathematics</option>
+                    <option value="psych">Psychology</option>
+                </select>
+                <br>
+            </p>
             <!-- Gender uses input elements with type 'radio' to indicate a radio button a user can select. It is required to select at least one input -->
-            <label>Gender:</label>
-            <br>
-            <label>
-                <input type="radio" name="gender" value="male" required>
-                Male
-            </label>
-            <label>
-                <input type="radio" name="gender" value="female">
-                Female
-            </label> <label>
-                <input type="radio" name="gender" value="other">
-                Other
-            </label>
-            <br>
+            <p>
+                <label>Gender:</label>
+                <p>
+                    <input type="radio" name="gender" value="male" required>
+                    <label>Male</label>
+                    <input type="radio" name="gender" value="female">
+                    <label>Female</label>
+                    <input type="radio" name="gender" value="other">
+                    <label>Other</label>
+                </p>
+            </p>
             <!-- Submit button to allow the client to be able to send all user input to the server for processing -->
-            <input type="submit" value="Submit">
+            <p>
+                <input type="submit" value="Submit">
+            </p>
         </form>
     </div>
 </body>
