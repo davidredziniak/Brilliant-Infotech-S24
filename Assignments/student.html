@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Demo Student Web Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,25 +15,25 @@
         <form>
             <!-- Student ID uses an input element with type 'number' to indicate that input should only be numbers -->
             <p>
-                <label for="sid">ID:</label>
-                <input type="number" id="sid" required>
+                <label for="sid">ID</label>
+                <input type="number" id="sid" placeholder="Enter your ID.." required>
                 <br>
             </p>
             <!-- Student Name uses an input element with type 'text' to indicate that input only allows for letters using a specified pattern -->
             <p>
-                <label for="sname">Name:</label>
-                <input type="text" id="sname" pattern="[A-Za-z]+" required>
+                <label for="sname">Name</label>
+                <input type="text" id="sname" pattern="[A-Za-z]+" placeholder="Enter your full name..." required>
                 <br>
             </p>
             <!-- Student email uses an input element with type 'text' to indicate that input only allows for letters using a specified pattern -->
             <p>
-                <label for="semail">Email:</label>
-                <input type="text" id="semail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                <label for="semail">Email</label>
+                <input type="text" id="semail" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" placeholder="Enter your email..." required>
                 <br>
             </p>
             <!-- Major uses a select element to indicate a drop down menu and allows for pre-defined options for the user to select -->
             <p>
-                <label for="major">Major:</label>
+                <label for="major">Major</label>
                 <select id="major" name="major" required>
                     <!-- The value attribute is defined and will be sent to the server -->
                     <option value="">Please choose</option>
@@ -46,7 +47,7 @@
             </p>
             <!-- Gender uses input elements with type 'radio' to indicate a radio button a user can select. It is required to select at least one input -->
             <p>
-                <label>Gender:</label>
+                <label>Gender</label>
             <p>
                 <input type="radio" name="gender" value="male" required>
                 <label>Male</label>
