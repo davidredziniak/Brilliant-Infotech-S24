@@ -10,29 +10,29 @@
     <div>
         <h2>Employee Form</h2>
         <!-- Each field ends in a <br> tag to allow readability and proper formatting -->
-        <!-- Each label has a 'for' attribute to indicate which element's ID it is bound to -->
+        <!-- Each label has a 'for' attribute to indicate which element's ID it is bound to for accessibility purposes -->
         <form action="/submit">
-            <!-- Employee ID uses an input element with type 'text' as XHTML doesn't support type="number" -->
+            <!-- ID uses an input element with type 'text' as XHTML doesn't support type="number" -->
             <p>
-                <label for="eid">Employee ID:</label>
+                <label for="eid">ID:</label>
                 <input type="text" id="eid" />
                 <br />
             </p>
             <!-- SSN uses an input element with type 'password' to indicate that input is hidden -->
             <p>
-                <label for="email">Last four of SSN:</label>
+                <label for="ssn">Last four of SSN:</label>
                 <input type="password" id="ssn" />
                 <br />
             </p>
-            <!-- Employee Name uses an input element with type 'text' to indicate that input only allows for text -->
+            <!-- Name uses an input element with type 'text' to indicate that input only allows for text -->
             <p>
-                <label for="ename">Employee Name:</label>
+                <label for="ename">Name:</label>
                 <input type="text" id="ename" />
                 <br />
             </p>
-            <!-- Employee Email uses an input element with type 'text' to indicate that input only allows for text -->
+            <!-- Email uses an input element with type 'text' to indicate that input only allows for text -->
             <p>
-                <label for="email">Employee Email:</label>
+                <label for="email">Email:</label>
                 <input type="text" id="email" />
                 <br />
             </p>
@@ -47,6 +47,7 @@
                     <option value="fin">Finance</option>
                     <option value="mark">Marketing</option>
                     <option value="it">Information Technology</option>
+                    <option value="other">Other</option>
                 </select>
                 <br />
             </p>
