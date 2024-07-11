@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo Employee Web Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,10 +14,10 @@
         <!-- Each field ends in a <br> tag to allow readability and proper formatting -->
         <!-- Each label has a 'for' attribute to indicate which element's ID it is bound to for accessibility purposes -->
         <form action="/submit">
-            <!-- ID uses an input element with type 'number', pattern requires 8 numbers-->
+            <!-- ID uses an input element with type 'text' in order to use a pattern that requires 8 numbers-->
             <div class="form-input-item">
                 <label for="eid">ID</label>
-                <input type="number" id="eid" class="form-user-input" pattern="[0-9]{8}" placeholder="Your 8 digit Employee ID.." required>
+                <input type="text" id="eid" class="form-user-input" pattern="[0-9]{8}" placeholder="Your 8 digit Employee ID.." required>
                 <br>
             </div>
             <!-- Name uses an input element with type 'text' to indicate that input only allows for text with a specified pattern to allow for only letters and spaces-->
