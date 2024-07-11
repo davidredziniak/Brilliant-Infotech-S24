@@ -13,6 +13,10 @@ input[type=radio] {
     cursor: pointer;
 }
 
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .form-container {
     border-radius: 5px;
     background-color: #273db4;
@@ -32,7 +36,6 @@ input[type=radio] {
     border: 3px solid #192c96;
     border-radius: 4px;
     box-sizing: border-box;
-    -moz-appearance: textfield;
 }
 
 .ssn-container {
