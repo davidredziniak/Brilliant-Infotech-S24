@@ -1,6 +1,6 @@
 /*  Set document body to 30% of the page since it is a small form
     Use sans-serif as the font
-    Style the text color of the nested elements white
+    Set the text color of the nested elements to white
 */
 body {
     width: 30%;
