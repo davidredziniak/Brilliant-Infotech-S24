@@ -8,33 +8,36 @@
 </head>
 
 <body>
-    <div>
+    <div class="form-container">
         <h2>Student Form</h2>
         <!-- Each field ends in a <br> tag to allow readability and proper formatting -->
         <!-- Each label has a 'for' attribute to indicate which element's ID it is bound to for accessbility purposes. -->
         <form>
             <!-- Student ID uses an input element with type 'number' to indicate that input should only be numbers -->
-            <p>
+            <div class="form-input-item">
                 <label for="sid">ID</label>
-                <input type="number" id="sid" placeholder="Enter your ID.." required>
+                <input type="number" id="sid" class="form-user-input" placeholder="Enter your ID.." required>
                 <br>
-            </p>
+            </div>
             <!-- Student Name uses an input element with type 'text' to indicate that input only allows for letters using a specified pattern -->
-            <p>
+            <div class="form-input-item">
                 <label for="sname">Name</label>
-                <input type="text" id="sname" pattern="[A-Za-z]+" placeholder="Enter your full name..." required>
+                <input type="text" id="sname" class="form-user-input" pattern="[A-Za-z]+"
+                    placeholder="Enter your full name..." required>
                 <br>
-            </p>
+            </div>
             <!-- Student email uses an input element with type 'text' to indicate that input only allows for letters using a specified pattern -->
-            <p>
+            <div class="form-input-item">
                 <label for="semail">Email</label>
-                <input type="text" id="semail" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" placeholder="Enter your email..." required>
+                <input type="text" id="semail" class="form-user-input"
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" placeholder="Enter your email..."
+                    required>
                 <br>
-            </p>
+            </div>
             <!-- Major uses a select element to indicate a drop down menu and allows for pre-defined options for the user to select -->
-            <p>
+            <div class="form-input-item">
                 <label for="major">Major</label>
-                <select id="major" name="major" required>
+                <select id="major" class="form-drop-down" name="major" required>
                     <!-- The value attribute is defined and will be sent to the server -->
                     <option value="">Please choose</option>
                     <option value="it">Information Technology</option>
@@ -44,23 +47,23 @@
                     <option value="other">Other</option>
                 </select>
                 <br>
-            </p>
+            </div>
             <!-- Gender uses input elements with type 'radio' to indicate a radio button a user can select. It is required to select at least one input -->
-            <p>
+            <div class="form-input-item">
                 <label>Gender</label>
-            <p>
-                <input type="radio" name="gender" value="male" required>
-                <label>Male</label>
-                <input type="radio" name="gender" value="female">
-                <label>Female</label>
-                <input type="radio" name="gender" value="other">
-                <label>Other</label>
-            </p>
-            </p>
+                <div class="form-input-item">
+                    <input type="radio" name="gender" value="male" required>
+                    <label>Male</label>
+                    <input type="radio" name="gender" value="female">
+                    <label>Female</label>
+                    <input type="radio" name="gender" value="other">
+                    <label>Other</label>
+                </div>
+            </div>
             <!-- Submit button to allow the client to be able to send all user input to the server for processing -->
-            <p>
-                <input type="submit" value="Submit">
-            </p>
+            <div class="form-input-item">
+                <input type="submit" class="form-submit" value="Submit">
+            </div>
         </form>
     </div>
 </body>

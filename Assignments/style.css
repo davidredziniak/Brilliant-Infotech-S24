@@ -2,31 +2,29 @@ body {
     width: 30%;
     height: 100%;
     font-family: sans-serif;
-    ;
     color: white;
 }
 
 h2 {
-    margin-top: 5%;
-    margin-left: 15%;
-    margin-bottom: 15%;
-    margin-right: 5%;
+    text-align: center;
 }
 
-div {
+input[type=radio] {
+    cursor: pointer;
+}
+
+.form-container {
     border-radius: 5px;
     background-color: #273db4;
     position: absolute;
     padding: 2%;
 }
 
-p {
-    margin-top: -2%;
+.form-input-item {
+    padding: 5px;
 }
 
-input[type=text],
-input[type=number],
-select {
+.form-user-input {
     width: 100%;
     padding: 5px 15px;
     margin: 8px 0;
@@ -37,9 +35,50 @@ select {
     -moz-appearance: textfield;
 }
 
+.ssn-container {
+    padding: 5px;
+    display: table;
+    width: 100%;
+}
 
+.ssn-left {
+    display: table-cell;
+    text-align: left;
+}
 
-input[type=submit] {
+.ssn-right {
+    display: table-cell;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.form-user-ssn {
+    width: 40%;
+    padding: 5px 15px;
+    margin: 8px 0;
+    border: 3px solid #192c96;
+    right: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -moz-appearance: textfield;
+}
+
+.form-drop-down {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: inherit;
+    width: 100%;
+    padding: 5px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #192c96;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ED7845;
+}
+
+.form-submit {
     background-color: #ED7845;
     color: white;
     padding: 14px 20px;
@@ -50,22 +89,8 @@ input[type=submit] {
     border-radius: 3px;
     cursor: pointer;
     font-weight: bold;
-
 }
 
-input[type=submit]:hover {
+.form-submit:hover {
     background-color: #e75516;
 }
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    color: inherit;
-    background-color: #ED7845;
-}
-
-
-option:hover {
-    background-color: yellow;
-  }
