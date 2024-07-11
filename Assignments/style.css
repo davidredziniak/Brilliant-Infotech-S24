@@ -76,7 +76,7 @@ input[type=number] {
 
 /* Style the SSN input element */
 .form-user-ssn {
-    width: 40%;
+    width: 50%;
     padding: 5px 15px;
     margin: 8px 0;
     border: 3px solid #192c96;
