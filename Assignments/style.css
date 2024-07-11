@@ -1,3 +1,7 @@
+/*  Set document body to 30% of the page since it is a small form
+    Use sans-serif as the font
+    Style the text color of the nested elements white
+*/
 body {
     width: 30%;
     height: 100%;
@@ -5,23 +9,28 @@ body {
     color: white;
 }
 
+/* Center header horizontally */
 h2 {
     text-align: center;
 }
 
+/* When hovering over a radio button, mouse pointer has an effect */
 input[type=radio] {
     cursor: pointer;
 }
 
+/* Hide arrows in input elements */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
+/* Hide arrows in input elements in Firefox */
 input[type=number] {
     -moz-appearance: textfield;
 }
 
+/* Style the container of the form and header */
 .form-container {
     border-radius: 5px;
     background-color: #273db4;
@@ -29,10 +38,12 @@ input[type=number] {
     padding: 2%;
 }
 
+/* Add padding to each item included in the form container */
 .form-input-item {
     padding: 5px;
 }
 
+/* Style input text boxes */
 .form-user-input {
     width: 100%;
     padding: 5px 15px;
@@ -43,23 +54,27 @@ input[type=number] {
     box-sizing: border-box;
 }
 
+/* Create a table container to properly separate label and input element */ 
 .ssn-container {
     padding: 5px;
     display: table;
     width: 100%;
 }
 
+/* Style the SSN label cell */
 .ssn-left {
     display: table-cell;
     text-align: left;
 }
 
+/* Style the SSN input cell */
 .ssn-right {
     display: table-cell;
     text-align: right;
     padding-right: 10px;
 }
 
+/* Style the SSN input element */
 .form-user-ssn {
     width: 40%;
     padding: 5px 15px;
@@ -71,6 +86,7 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+/* Style the drop down menu (select element) */
 .form-drop-down {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -86,6 +102,7 @@ input[type=number] {
     background-color: #ED7845;
 }
 
+/* Style the submit button */
 .form-submit {
     background-color: #ED7845;
     color: white;
@@ -99,6 +116,7 @@ input[type=number] {
     font-weight: bold;
 }
 
+/* Color change effect when user hovers over the submit button */
 .form-submit:hover {
     background-color: #e75516;
 }
