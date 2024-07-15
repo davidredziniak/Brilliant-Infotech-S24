@@ -17,12 +17,13 @@
             <!-- Student ID uses an input element with type 'number' to indicate that input should only be numbers -->
             <div class="form-input-item">
                 <label for="sid">ID</label>
+                <br>
                 <input type="number" id="sid" class="form-user-input" placeholder="Enter your ID.." required>
                 <br>
             </div>
             <!-- Student Name uses an input element with type 'text' to indicate that input only allows for letters using a specified pattern -->
             <div class="form-input-item">
-                <label for="sname">Name</label>
+                <label for="sname">Name</label><br>
                 <input type="text" id="sname" class="form-user-input" pattern="[A-Za-z ]+"
                     placeholder="Enter your full name..." required>
                 <br>
@@ -30,6 +31,7 @@
             <!-- Student email uses an input element with type 'text' to indicate that input only allows for letters using a specified email pattern -->
             <div class="form-input-item">
                 <label for="semail">Email</label>
+                <br>
                 <input type="text" id="semail" class="form-user-input"
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" placeholder="Enter your email..."
                     required>
@@ -38,6 +40,7 @@
             <!-- Major uses a select element to indicate a drop down menu and allows for pre-defined options for the user to select -->
             <div class="form-input-item">
                 <label for="major">Major</label>
+                <br>
                 <select id="major" class="form-drop-down" name="major" required>
                     <!-- The value attribute is defined and will be sent to the server -->
                     <option value="">Please choose</option>
@@ -52,6 +55,7 @@
             <!-- Gender uses input elements with type 'radio' to indicate a radio button a user can select. It is required to select at least one input -->
             <div class="form-input-item">
                 <label>Gender</label>
+                <br>
                 <div class="form-input-item">
                     <input type="radio" name="gender" value="male" required>
                     <label>Male</label>
