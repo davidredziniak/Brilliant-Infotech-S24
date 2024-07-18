@@ -12,9 +12,11 @@
         // Upon loading the page, it adds an onclick event listener to each navigation element in the navbar.
         // The event listener adds/removes the 'active' class depending on if the user has chosen the specific element
         window.onload = function () {
-            document.querySelectorAll("#main-menu a").forEach(function (element) {
+            document.querySelectorAll("#main-menu a.nav-item").forEach(function (element) {
                 element.addEventListener('click', function () {
-                    document.querySelector(".active").classList.remove("active");
+                    document.querySelectorAll("#main-menu a.active").forEach(function(activeElement) {
+                        activeElement.classList.remove("active");
+                    });
                     this.classList.add("active");
                 });
             });
