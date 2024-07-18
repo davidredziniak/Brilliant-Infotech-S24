@@ -1,4 +1,5 @@
 /* General */
+
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -12,6 +13,7 @@ body {
 }
 
 /* Header */
+
 .header {
     background-color: white;
 }
@@ -63,6 +65,7 @@ body {
 }
 
 /* Banner section */
+
 .banner {
     background: url('./images/1.jpg') no-repeat center center/cover;
     padding: 150px 0;
@@ -100,6 +103,7 @@ body {
 }
 
 /* About section */
+
 .about {
     padding-top: 150px;
     padding-bottom: 150px;
@@ -128,6 +132,7 @@ body {
 }
 
 /* Hours section */
+
 .hours {
     background-color: #f9f9f9;
     padding: 50px 0;
@@ -156,6 +161,7 @@ body {
 }
 
 /* Interior products section */
+
 .interior {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -170,19 +176,19 @@ body {
 }
 
 .second-col {
-    height:400px;
-    width:100%;
+    height: 400px;
+    width: 100%;
     object-fit: cover;
 }
 
 .page-link {
     line-height: 20px;
     text-align: center;
-    border-radius:50%;
-    height:40px;
-    width:40px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
     margin-left: 10px;
-    border-color:#e0e1e3;
+    border-color: #e0e1e3;
     color: #717275;
 }
 
@@ -203,7 +209,8 @@ body {
     text-decoration: none;
 }
 
-/* Reviews section styles */
+/* Reviews section */
+
 .reviews {
     padding-top: 50px;
     padding-bottom: 150px;
@@ -214,7 +221,8 @@ body {
     color: #037503;
 }
 
-/* Reviews carousel section */
+/* Carousel styling */
+
 .carousel-item {
     text-align: center;
     padding: 20px;
@@ -244,7 +252,7 @@ body {
 
 .carousel-nav button:focus {
     background-color: white;
-    color: #ff6f61;
+    color: #f24d25;
 
 }
 
@@ -263,7 +271,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ff6f61;
+    background-color: #f24d25;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -284,7 +292,42 @@ body {
     color: #f3cf02;
 }
 
-/* Footer style */
+/* Contact section */
+
+.contact {
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact h6 {
+    color: #037503;
+}
+
+.contact-form {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #f24d25;
+    color: white;
+}
+
+.contact-map {
+    background-color: #ffd853;
+    border-top: 20px solid #f24d25;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.contact-map a {
+    text-decoration: none;
+}
+
+/* Footer section */
 
 footer {
     background-color: #333;
