@@ -1,0 +1,295 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    background-color: white;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+
+.header .logo h2 {
+    color: #f24d25;
+}
+
+.header .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header .navbar ul li a {
+    text-decoration: none;
+    color: #333333de;
+}
+
+.nav-item {
+    box-sizing: border-box;
+}
+
+.nav-item a {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 20px 35px;
+}
+
+.nav-item:hover {
+    background-color: #ffd853;
+}
+
+.nav-item .active {
+    background: #ffd853;
+}
+
+/* Banner section */
+.banner {
+    background: url('./images/1.jpg') no-repeat center center/cover;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.banner-form {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner .search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.banner .search-box input,
+.banner .search-box button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.banner .search-box button {
+    background-color: #f24d25;
+    color: white;
+    cursor: pointer;
+}
+
+/* About section */
+.about {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.about h6 {
+    color: #037503;
+}
+
+.about p {
+    color: #757578;
+}
+
+.about .img-sm {
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.about .img-med {
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Hours section */
+.hours {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+    background-image: url('./images/4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hours h4 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.hours p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.hours-container {
+    background: #efeff0;
+    padding: 30px 50px;
+    border-radius: 15px;
+    border-top: 20px solid #f24d25;
+}
+
+/* Interior products section */
+.interior {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.interior h6 {
+    color: #037503;
+}
+
+.interior img {
+    border-radius: 15px;
+}
+
+.second-col {
+    height:400px;
+    width:100%;
+    object-fit: cover;
+}
+
+.page-link {
+    line-height: 20px;
+    text-align: center;
+    border-radius:50%;
+    height:40px;
+    width:40px;
+    margin-left: 10px;
+    border-color:#e0e1e3;
+    color: #717275;
+}
+
+.page-link:hover {
+    color: white;
+    background-color: #f24d25;
+}
+
+.selected {
+    background-color: #f24d25;
+    color: white;
+}
+
+.arrow {
+    color: #717275;
+    line-height: 25px;
+    border: 0;
+    text-decoration: none;
+}
+
+/* Reviews section styles */
+.reviews {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-color: #f2efef;
+}
+
+.reviews-top h6 {
+    color: #037503;
+}
+
+/* Reviews carousel section */
+.carousel-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: -50px;
+    right: 50px;
+}
+
+.carousel-nav button {
+    background: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-family: bootstrap-icons;
+    color: #ff6f61;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.carousel-nav button:hover {
+    color: white;
+    background-color: #f24d25;
+}
+
+.carousel-nav button:focus {
+    background-color: white;
+    color: #ff6f61;
+
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff6f61;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-footer img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.card-person-role {
+    font-size: small;
+    font-weight: 100;
+}
+
+.rating {
+    color: #f3cf02;
+}
+
+/* Footer style */
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
