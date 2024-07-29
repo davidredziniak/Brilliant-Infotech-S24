@@ -1,0 +1,90 @@
+/* Navbar section */
+
+.nav-link {
+    &.active,
+    &.show {
+        color: #F64D11 !important;
+    }
+}
+
+/* Banner section */
+
+.banner {
+    background: url('./images/1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+}
+
+.learn-more {
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+/* About section */
+
+.about ul.nav {
+    margin-top: 20px;
+}
+
+.about ul.nav li a {
+    font-weight: bold;
+    color: #F64D11;
+}
+
+.about h3 {
+    margin-top: 20px;
+}
+
+.about .nav-pills .nav-item {
+    width: 100%;
+  }
+
+.about .nav-pills .nav-link {
+    color: gray;
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 1px solid gray;
+    border-radius: 0;
+    padding-right: 0;
+  }
+
+.about .nav-pills .nav-link:hover,
+.about .nav-pills .nav-link.active, 
+.about .nav-pills .show>.nav-link {
+  background: transparent;
+  border-left-color: #F64D11;
+  color: #F64D11;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-menu {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-item {
+    display: block;
+    width: 50%;
+}
+
+.footer-item-link {
+    display: inline-block;
+    vertical-align: top;
+    color: #656c72;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
