@@ -1,0 +1,84 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar styles */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-btn {
+    color: #fff;
+    background-color: #de3546;
+    border-color: #e43647;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.navbar-btn:hover {
+    color: #fff;
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+}
+
+/* Banner section styles */
+.banner-section {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-section h1,
+.banner-section p {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Special menus styles */
+.menu h2 {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.reviews {
+    color: #f3af24;
+}
+
+.card-tag {
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+    padding: 4px 12px;
+    top: -260px;
+    left: 260px;
+}
+
+.card-info {
+    margin-top: -60px;
+    padding: 10px 10px 20px 10px;
+}
+
+/* Footer styles */
+.footer-section {
+    background-color: gray;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
